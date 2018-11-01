@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CBB99F75218B732C0075BF29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB99F74218B732C0075BF29 /* AppDelegate.swift */; };
-		CBB99F77218B732C0075BF29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB99F76218B732C0075BF29 /* ViewController.swift */; };
+		CBB99F77218B732C0075BF29 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB99F76218B732C0075BF29 /* DrawingViewController.swift */; };
 		CBB99F7A218B732C0075BF29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB99F78218B732C0075BF29 /* Main.storyboard */; };
 		CBB99F7C218B732E0075BF29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB99F7B218B732E0075BF29 /* Assets.xcassets */; };
 		CBB99F7F218B732E0075BF29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB99F7D218B732E0075BF29 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		CBB99F71218B732C0075BF29 /* DrawingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB99F74218B732C0075BF29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBB99F76218B732C0075BF29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CBB99F76218B732C0075BF29 /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
 		CBB99F79218B732C0075BF29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBB99F7B218B732E0075BF29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBB99F7E218B732E0075BF29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +54,46 @@
 		CBB99F73218B732C0075BF29 /* DrawingProject */ = {
 			isa = PBXGroup;
 			children = (
-				CBB99F74218B732C0075BF29 /* AppDelegate.swift */,
-				CBB99F76218B732C0075BF29 /* ViewController.swift */,
-				CBB99F78218B732C0075BF29 /* Main.storyboard */,
-				CBB99F7B218B732E0075BF29 /* Assets.xcassets */,
-				CBB99F7D218B732E0075BF29 /* LaunchScreen.storyboard */,
-				CBB99F80218B732E0075BF29 /* Info.plist */,
+				CBB99F89218B73EA0075BF29 /* Model */,
+				CBB99F86218B73CF0075BF29 /* Resources */,
+				CBB99F87218B73D80075BF29 /* Controller */,
+				CBB99F88218B73E30075BF29 /* View */,
 			);
 			path = DrawingProject;
+			sourceTree = "<group>";
+		};
+		CBB99F86218B73CF0075BF29 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CBB99F74218B732C0075BF29 /* AppDelegate.swift */,
+				CBB99F7B218B732E0075BF29 /* Assets.xcassets */,
+				CBB99F80218B732E0075BF29 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CBB99F87218B73D80075BF29 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CBB99F76218B732C0075BF29 /* DrawingViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CBB99F88218B73E30075BF29 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBB99F78218B732C0075BF29 /* Main.storyboard */,
+				CBB99F7D218B732E0075BF29 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBB99F89218B73EA0075BF29 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBB99F77218B732C0075BF29 /* ViewController.swift in Sources */,
+				CBB99F77218B732C0075BF29 /* DrawingViewController.swift in Sources */,
 				CBB99F75218B732C0075BF29 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
