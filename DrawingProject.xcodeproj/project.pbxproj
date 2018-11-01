@@ -12,6 +12,7 @@
 		CBB99F7A218B732C0075BF29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB99F78218B732C0075BF29 /* Main.storyboard */; };
 		CBB99F7C218B732E0075BF29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB99F7B218B732E0075BF29 /* Assets.xcassets */; };
 		CBB99F7F218B732E0075BF29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB99F7D218B732E0075BF29 /* LaunchScreen.storyboard */; };
+		CBB99F8B218B7D120075BF29 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB99F8A218B7D120075BF29 /* DrawingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CBB99F7B218B732E0075BF29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBB99F7E218B732E0075BF29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBB99F80218B732E0075BF29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBB99F8A218B7D120075BF29 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				CBB99F78218B732C0075BF29 /* Main.storyboard */,
 				CBB99F7D218B732E0075BF29 /* LaunchScreen.storyboard */,
+				CBB99F8A218B7D120075BF29 /* DrawingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBB99F8B218B7D120075BF29 /* DrawingView.swift in Sources */,
 				CBB99F77218B732C0075BF29 /* DrawingViewController.swift in Sources */,
 				CBB99F75218B732C0075BF29 /* AppDelegate.swift in Sources */,
 			);
@@ -314,15 +318,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M3L692KDA4;
-				INFOPLIST_FILE = DrawingProject/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/DrawingProject/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = CTEC.DrawingProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -332,15 +338,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M3L692KDA4;
-				INFOPLIST_FILE = DrawingProject/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/DrawingProject/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = CTEC.DrawingProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
