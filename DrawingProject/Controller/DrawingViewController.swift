@@ -8,10 +8,11 @@
 
 import UIKit
 
-public class drawingViewController: UIViewController {
+public class drawingViewController: UIViewController
+{
 
     public override func viewDidLoad() -> Void
-{
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
