@@ -23,7 +23,7 @@ public class ArtCollectionViewController: UICollectionViewController
     {
         return [
             UIImage(named: "JakeRunyan"),
-            UIImage(named: "DrawingTurlte"),
+            UIImage(named: "DrawingTurtle"),
             UIImage(named: "javaHaiku"),
             UIImage(named: "swiftHaiku"),
             UIImage(named: "MTMHaiku"),
@@ -53,28 +53,11 @@ public class ArtCollectionViewController: UICollectionViewController
     {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
+        // Do any additional setup after leading the view.
     }
 
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-     public override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-     {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-     }
-    */
-
-    // MARK: UICollectionViewDataSource
-
+    
     public override func numberOfSections(in collectionView: UICollectionView) -> Int
     {
         return 1
@@ -84,6 +67,14 @@ public class ArtCollectionViewController: UICollectionViewController
     {
         return creativeCS.count
     }
+    
+     public override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+     {
+        // Get the new view controller using [segue destinationViewController].
+        // Pass the selected object to the new view controller.
+     }
+
+    // MARK: UICollectionViewDataSource
     
     public override func collectionView(_ collectionView: UICollectionView,
                                cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
